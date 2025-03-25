@@ -1,28 +1,29 @@
 package com.example.springbootjpa.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "MESSAGEOFDAY")
 public class MessageOfDay {
 
     @Id
-    private Long code;
-    private String description;
+    private Long id;
+    private String message;
 
-    public Long getCode() {
-        return code;
-    }
+public Long getId() {
+    return id;
+}
+public String getMessage() {
+    return message;
+}
+public void setId(Long id) {
+    this.id = id;
+}
 
-    public void setCode(Long code) {
-        this.code = code;
-    }
+public void setMessage(String message) {
+    this.message = message;
+}
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
 }

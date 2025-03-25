@@ -1,6 +1,11 @@
+package com.example.springbootjpa.controller;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.example.springbootjpa.entity.MessageOfDay;
+import com.example.springbootjpa.repository.MessageOfDayRepository;
 
 import java.util.Random;
 
