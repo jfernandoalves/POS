@@ -14,7 +14,7 @@ public class MessageOfDayController {
 
     @Autowired
     private MessageOfDayRepository messageOfDayRepository;
-
+  
     @GetMapping("/messageOfDay")
     public MessageOfDay getMessageOfDay() {
         Long randomId = (long) new Random().nextInt(10); // Assuming IDs are in the range of 0-9
